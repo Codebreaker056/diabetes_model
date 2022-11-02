@@ -1,0 +1,34 @@
+<html>
+    <body bgcolor=#d4a3ae>   
+    <center>   
+        <h1>Diabetes Predictor</h1><br>
+        
+        <form method="POST", action="/result">
+           <label>Glucose :</label> 
+           <input type="text", name='Glucose', placeholder="Enter Glucose"><br><br>
+
+    	   <label>BloodPressure :</label>
+           <input type="text", name='BP', placeholder="Enter BloodPressure"> <br><br>
+
+	       <label>SkinThickness :</label>
+           <input type="text", name='SkinThickness', placeholder="SkinThickness"> <br><br>
+
+           <label>Insulin :</label>
+           <input type="text", name='Insulin', placeholder="Enter Insulin"> <br><br>
+
+           <label>BMI:</label>
+           <input type="text", name='BMI', placeholder="Enter BMI"> <br><br>
+
+           <label>DiabetesPedigreeFunction:</label>
+           <input type="text", name='DPF', placeholder="Enter DiabetesPedigreeFunction"> <br><br>
+
+	       <label>Age:</label>
+           <input type="text", name='Age', placeholder="Enter Age"> <br><br>
+
+           <input type="submit" , value='Submit' >
+        </form>
+        <h>Dibetes Prediction : {{prediction}}</h>
+    </center> 
+    </body>
+</html>
+
